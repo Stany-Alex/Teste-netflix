@@ -1,0 +1,155 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilo do modal */
+.active {
+    display: block !important;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background: linear-gradient( rgb(0,0,0,0.6),rgba(0,0,0,0.6)); 
+}
+  
+.conteudoModal {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,0,0,0.8);
+    color: rgb(215, 215, 215);
+    margin: 10% auto; 
+    padding: 18px;
+    border: 2px solid rgb(126, 126, 126);
+    width: 60%;
+}
+
+.infoTable .chave {
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Arial Black', Times;
+}
+
+.infoTable .valor {
+    padding: 8px 0;
+    font-size: 16px;
+    font-family: 'Arial', Times;
+}
+
+.close {
+    color: rgb(126, 126, 126);
+    display: flex;
+    align-self: flex-end;
+    font-size: 22px;
+    font-weight: bold;
+    transition: .4s all;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Elementos base */
+
+body {
+    background-color: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Filme principal */
+
+.filme-principal {
+    font-size: 17px;
+    background: linear-gradient(rgba(0,0,0, .45),rgba(0,0,0, .45)100%), url(../img/thewitcher_cover.jpg);
+    height:450px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0, .5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .4s all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-filmes {
+    margin: 10px 10px;
+}
